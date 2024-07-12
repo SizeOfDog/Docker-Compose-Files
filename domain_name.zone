@@ -1,0 +1,19 @@
+$ORIGIN <middle_of_domain_name>.<end_of_domain_name>. 
+
+$TTL 86400      ; 1 day
+
+@               IN              SOA             ns.<middle_of_domain_name>.<end_of_domain_name>.   <admin_user_name> (
+                                                20240307
+                                                12h 
+                                                15m 
+                                                3w
+                                                2h
+                                                )
+
+
+                IN              NS              ns.<middle_of_domain_name>.<end_of_domain_name>. 
+
+ns              IN              A               <local_ip_address>
+
+
+<sub_domain_or_wildcard>       IN              A               <local_ip_address>
